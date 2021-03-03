@@ -24,9 +24,9 @@ public class Server {
 		OutputStream outputStream = null;
 		PrintWriter writer = null;
 		
-		String path = ".\\";
+//		String path = ".\\";
 		try {
-			File file = new File(path+fileName);
+			File file = new File(fileName);
 			outputStream = socket.getOutputStream();
 			writer = new PrintWriter(outputStream, true);
 			
